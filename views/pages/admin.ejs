@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <h1>Chapter</h1>
+    <form action="/manga/api/upload/chapter" method="POST" enctype="multipart/form-data">
+        <input type="file" name="images" multiple>
+        <button type="submit">Upload Images</button>
+    </form>
+
+    <h1>Thumbnail</h1>
+    <form action="/manga/api/upload/thumbnail" method="POST" enctype="multipart/form-data">
+        <input type="file" name="images" >
+        <button type="submit">Upload Images</button>
+    </form>
+      
+    <h1>Manga</h1>
+    <form action="/manga/api/create" method="POST" enctype="multipart/form-data">
+        <input type="file" name="images" >
+        <input type="text" name="title" >
+        <input type="text" name="desc" >
+
+        <button type="submit">Create Manga</button>
+    </form>
+</body>
+</html>
