@@ -51,4 +51,6 @@ router.post("/api/create", uploadThumbnail.array('images', 100), async (req,res)
     
 })
 
+router.get("/")
+
 module.exports = router;

@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<%- include("../partials/base",{ title: "Docs" }) %>
 
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <h1> <%= NAME %> </h1>
-</body>
-</html>
+<h1> <%= CONFIG.NAME %> </h1>
+<pre>
+    <% for (let i = 0; i < TOPFIVE.length; i++) { %>
+        <div><%= TOPFIVE[i].title %></div>
+    <% } %>
+</pre>
